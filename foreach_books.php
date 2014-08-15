@@ -25,17 +25,20 @@
 
  foreach ($books as $title => $stats) {
 
- 	// if ($stats['published']) {
- 	//  	# code...
- 	//  } 
- 	echo "_____________\n" . "$title\n";
+ 	if ($stats['published'] > 1950 ) {
+ 	 	echo "_____________\n" . "$title\n";
  	
- 	
- 	foreach ($stats as $category => $value) {
- 		echo "$category = $value\n";
- 	}
+ 		foreach ($stats as $category => $value) {
+ 			
+ 			echo "$category = $value\n";
+ 	 }
 
- 	echo "_____________\n";
+ 		echo "_____________\n";
+ 	 } 
+
+ 	else {
+ 		echo "\n";
+ 	}
  }
 
  ?>
