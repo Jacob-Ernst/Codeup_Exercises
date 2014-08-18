@@ -38,31 +38,31 @@
 // 		echo "Sunday" . PHP_EOL;
 // 		break;		
 // }
- if ($date_default_timezone_set = 1) {
+ if ($date_default_timezone_set == 1) {
  	echo "Monday" . PHP_EOL;
  }
 
- elseif($date_default_timezone_set = 2) {
+ elseif($date_default_timezone_set == 2) {
  	echo "Tuesday" . PHP_EOL;
  }
  
- elseif($date_default_timezone_set = 3) {
+ elseif($date_default_timezone_set == 3) {
  	echo "Wednesday" . PHP_EOL;
  }
 		
-elseif($date_default_timezone_set = 4) {
+elseif($date_default_timezone_set == 4) {
  	echo "Thursday" . PHP_EOL;
  }
  
- elseif($date_default_timezone_set = 5) {
+ elseif($date_default_timezone_set == 5) {
  	echo "Friday" . PHP_EOL;
  }	
 	
-elseif($date_default_timezone_set = 6) {
+elseif($date_default_timezone_set == 6) {
  	echo "Saturday" . PHP_EOL;
  }
  
- elseif($date_default_timezone_set = 7) {
+ elseif($date_default_timezone_set == 7) {
  	echo "Sunday" . PHP_EOL;
  }
 
