@@ -1,33 +1,83 @@
 <?php
 
- function add($a, $b) {
- 	echo $a + $b . PHP_EOL;
+function errMsg () {
+	echo "Human, please enter numeric parameters." . PHP_EOL;
+}
+
+function add($a, $b) {
+ 	
+ 	if (is_numeric($a) && is_numeric($b)) {
+ 		echo $a + $b . PHP_EOL;
+ 	} 
+
+ 	else {
+ 		errMsg();
+ 		echo "Your input was $a and $b" . PHP_EOL;
+ 	}	
  }
 
-add(1, 2);
+add(30, 0);
 
 function subtract($a, $b) {
- 	echo $a - $b . PHP_EOL;
+ 	if (is_numeric($a) && is_numeric($b)) {
+ 		echo $a - $b . PHP_EOL;
+ 	}
+ 	
+ 	else {
+ 		errMsg();
+ 		echo "Your input was $a and $b" . PHP_EOL;
+ 	}	
+
  }
 
-subtract(1, 2);
+subtract(30, 0);
 
 function multiply($a, $b) {
-	echo $a * $b . PHP_EOL;
+	if (is_numeric($a) && is_numeric($b)) {
+ 		echo $a * $b . PHP_EOL;
+ 	}
+ 	
+ 	else {
+ 		errMsg();
+ 		echo "Your input was $a and $b" . PHP_EOL;
+ 	}	
+
  }
 
-multiply(2, 21);
+multiply(30, 0);
 
 function divide($a, $b) {
- 	echo $a / $b . PHP_EOL;
+ 	if (is_numeric($a) && is_numeric($b)) {
+ 		if($b == 0){
+ 			echo "FLY, you fool!" . PHP_EOL;
+ 		}else{
+ 			echo $a / $b . PHP_EOL;
+ 		}
+ 	}
+ 	
+ 	else {
+ 		errMsg();
+ 		echo "Your input was $a and $b" . PHP_EOL;
+ 	}	
  }
 
-divide(60, 2);
+divide(30, 0);
 
 function modulus($a, $b) {
- 	echo $a % $b . PHP_EOL;
+ 	if (is_numeric($a) && is_numeric($b)) {
+ 		if($b == 0){
+ 			echo "FLY, you fool!" . PHP_EOL;
+ 		}else{
+ 			echo $a % $b . PHP_EOL;
+ 		}
+ 	}
+ 	
+ 	else {
+ 		errMsg();
+ 		echo "Your input was $a and $b" . PHP_EOL;
+ 	}	
  }
 
-modulus(60, 2);
+modulus(30, 0);
 
 
