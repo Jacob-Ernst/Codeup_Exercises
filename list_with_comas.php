@@ -3,8 +3,8 @@
  function humanized_list($string, $alphabetize = FALSE) {
  	$array = explode(', ', $string);
 
- 	if ($alphabetize == TRUE) {
- 		asort($array);
+ 	if ($alphabetize) {
+ 		sort($array);
  	}
 
  	$last_item = array_pop($array);
@@ -19,7 +19,7 @@
 
 
  // Humanize that list
- $famous_fake_physicists = humanized_list($physicists_string, TRUE);
+ $famous_fake_physicists = humanized_list($physicists_string, $alphabetize);
 
  // Output sentence
  echo "Some of the most famous fictional theoretical physicists are {$famous_fake_physicists}." . PHP_EOL;
